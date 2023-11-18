@@ -2,18 +2,77 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Finance App</title>
+  <title>FinEase</title>
   <!-- Include any necessary CSS -->
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <header>
-    <h1>Finance App</h1>
+    <h1>FinEase (Finance App)</h1>
     <label for="datepicker">Select Month/Year:</label>
     <input type="month" id="datepicker" name="datepicker">
   </header>
   
   <!-- Other sections and content of the app will go here -->
+  <nav>
+    <div class="column">
+      <label for="income">Income</label>
+      <output id="incomeOutput"></output>
+    </div>
+    <div class="column">
+      <label for="spent">Spent</label>
+      <output id="spentOutput"></output>
+    </div>
+    <div class="column">
+      <label for="overUnder">Over/Under</label>
+      <output id="overUnderOutput"></output>
+    </div>
+    <!-- Add more columns as needed -->
+  </nav>
+  
+  <!-- Other sections and content of the app will go here -->
+  <section>
+    <table id="expenseTable">
+      <thead>
+        <tr>
+          <th>Expense</th>
+          <th>Planned Cost</th>
+          <th>Actual Cost</th>
+        </tr>
+      </thead>
+      <tbody>
+        <!-- Table rows will be dynamically added here -->
+      </tbody>
+    </table>
+    <div>
+      <label for="expense">Expense:</label>
+      <input type="text" id="expense">
+      <label for="plannedCost">Planned Cost:</label>
+      <input type="number" id="plannedCost">
+      <label for="actualCost">Actual Cost:</label>
+      <input type="number" id="actualCost">
+      <button id="AddRowButton">Add Row</button>
+    </div>
+  </section>
+  
+  <footer>
+    <!-- Footer content here -->
+  </footer>
+
+  <!-- Include any necessary scripts -->
+  <script src="scripts.js"></script>
+</body>
+</html>
+This code snippet adds a nav element containing three columns, each with a label and an output element. You can style the navigation bar (nav) and its columns (column) further using CSS to achieve the desired appearance and functionality.
+
+Feel free to modify the styles, adjust the layout, or add more columns according to your preferences. If you need additional functionalities or specific interactions, we can incorporate JavaScript to handle them as well.
+
+
+
+
+
+
+
   
   <footer>
     <!-- Footer content here -->
