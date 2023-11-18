@@ -1,100 +1,119 @@
+/* Global styles */
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f4f4f4;
-  }
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+  line-height: 1.6;
+}
 
-  /* Header styles */
-  header {
-    background-color: #333;
-    color: #fff;
-    padding: 10px;
-    text-align: center;
-  }
+/* Header */
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
 
-  /* Navigation bar styles */
-  nav {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    background-color: #fff;
-    padding: 10px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    margin-top: 20px;
-  }
+/* Navigation bar */
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #fff;
+  padding: 15px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-top: 20px;
+}
 
-  .column {
-    flex: 1;
-    text-align: center;
-  }
+/* Columns */
+.column {
+  flex: 1;
+  text-align: center;
+}
 
-  /* Table styles */
-  table {
-    border-collapse: collapse;
-    width: 100%;
-    margin-top: 20px;
-    background-color: #fff;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  }
+/* Tables */
+table {
+  border-collapse: collapse;
+  width: 100%;
+  margin-top: 20px;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  table-layout: fixed;
+}
 
-  th, td {
-    border: 1px solid #ddd;
-    padding: 8px;
-    text-align: left;
-  }
+th, td {
+  border: 1px solid #ddd;
+  padding: 12px; /* Increased padding for better spacing */
+  text-align: left;
+  width: 25%;
+  word-wrap: break-word;
+}
 
-  th {
-    background-color: #f2f2f2;
-  }
+th:nth-child(1),
+td:nth-child(1) {
+  width: 30%;
+}
 
-  .green {
-    color: green;
-  }
+th:nth-child(4),
+td:nth-child(4) {
+  width: 20%;
+}
 
-  .red {
-    color: red;
-  }
+th {
+  background-color: #f2f2f2;
+  padding: 12px;
+}
 
-  /* Input and button styles */
-  div > label {
-    margin-right: 10px;
-  }
+/* Green and red classes */
+.green {
+  color: #4CAF50; /* Green color */
+}
 
-  div > input {
-    margin-right: 20px;
-    padding: 8px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-  }
+.red {
+  color: #F44336; /* Red color */
+}
 
-  div > button {
-    padding: 8px 16px;
-    background-color: #333;
-    color: #fff;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-  }
+/* Input and button styles */
+div > label {
+  margin-right: 15px;
+  font-weight: bold;
+}
 
-  div > button:hover {
-    background-color: #555;
-  }
-  /* Add more styling as needed */
-  input[list] {
-    cursor: pointer;
-  }
+div > input {
+  padding: 10px; /* Slightly smaller padding */
+  border: 1px solid #ccc;
+  border-radius: 6px; /* Rounded corners */
+}
 
-  datalist {
-    display: none;
-    position: absolute;
-    border: 1px solid #ccc;
-    background-color: #fff;
-    z-index: 1;
-    max-height: 120px;
-    overflow-y: auto;
-  }
+div > button {
+  padding: 10px 20px; /* Slightly smaller padding */
+  background-color: #333;
+  color: #fff;
+  border: none;
+  border-radius: 6px; /* Rounded corners */
+  cursor: pointer;
+}
 
-  input[list]:hover + datalist {
-    display: block;
-  }
+div > button:hover {
+  background-color: #555;
+}
+
+/* Datalist styles */
+input[list] {
+  cursor: pointer;
+}
+
+datalist {
+  display: none;
+  position: absolute;
+  border: 1px solid #ccc;
+  background-color: #fff;
+  z-index: 1;
+  max-height: 120px;
+  overflow-y: auto;
+}
+
+input[list]:hover + datalist {
+  display: block;
+}

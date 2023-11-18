@@ -29,7 +29,37 @@
     </div>
     <!-- Add more columns as needed -->
   </nav>
-  
+  <section>
+    <table id="incomeTable">
+      <thead>
+        <tr>
+          <th>Income</th>
+          <th>Planned Amount</th>
+          <th>Actual Amount</th>
+        </tr>
+      </thead>
+      <tbody>
+        <!-- Table rows will be dynamically added here -->
+      </tbody>
+    </table>
+    <div>
+      <label for="income">Income:</label>
+      <input type="text" id="income" list="incomeList">
+      <datalist id="incomeList">
+        <option value="Paycheck_DM">
+        <option value="Paycheck_LM"></option>
+        <option value="Gift">
+        <option value="Gov-Child-Aid">
+      </datalist>
+      <label for="plannedAmount">Planned Amount:</label>
+      <input type="number" id="plannedAmount">
+      <label for="actualAmount">Actual Amount:</label>
+      <input type="number" id="actualAmount">
+      <button id="AddIncRowButton" >Add Row</button>
+    </div>
+  </section>
+
+
   <!-- Other sections and content of the app will go here -->
   <section>
     <table id="expenseTable">
@@ -63,10 +93,34 @@
       <input type="number" id="plannedCost">
       <label for="actualCost">Actual Cost:</label>
       <input type="number" id="actualCost">
-      <button id="AddRowButton" >Add Row</button>
+      <button id="AddExpRowButton">Add Row</button>
     </div>
   </section>
-  
+  <section id="savingsSection">
+    <h2>Savings</h2>
+    <table id="savingsTable">
+      <thead>
+        <tr>
+          <th>Reserved For</th>
+          <th>Goal</th>
+          <th>Current</th>
+          <th>Left to Go</th>
+        </tr>
+      </thead>
+      <tbody>
+        <!-- Table rows will be dynamically added here -->
+      </tbody>
+    </table>
+    <div>
+      <label for="reservedFor">Reserved For:</label>
+      <input type="text" id="reservedFor">
+      <label for="goalAmount">Goal:</label>
+      <input type="number" id="goalAmount">
+      <label for="currentAmount">Current:</label>
+      <input type="number" id="currentAmount">
+      <button id="addSavingsRowButton">Add Row</button>
+    </div>
+  </section>
   <footer>
     <!-- Footer content here -->
   </footer>
