@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <title>FinEase</title>
   <!-- Include any necessary CSS -->
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
   <header>
@@ -46,12 +46,24 @@
     </table>
     <div>
       <label for="expense">Expense:</label>
-      <input type="text" id="expense">
+      <input type="text" id="expense" list="expensesList">
+      <datalist id="expensesList">
+        <option value="Mortgage">
+        <option value="Groceries">
+        <option value="Utilities">
+        <option value="Phone">
+        <option value="Internet">
+        <option value="FastFood">
+        <option value="Car Insurance">
+        <option value="Clothing">
+        <option value="Loans">
+        <option value="Credit Payment">
+      </datalist>
       <label for="plannedCost">Planned Cost:</label>
       <input type="number" id="plannedCost">
       <label for="actualCost">Actual Cost:</label>
       <input type="number" id="actualCost">
-      <button id="AddRowButton">Add Row</button>
+      <button id="AddRowButton" >Add Row</button>
     </div>
   </section>
   
@@ -60,15 +72,9 @@
   </footer>
 
   <!-- Include any necessary scripts -->
-  <script src="scripts.js"></script>
+  <script src="./js/code.js"></script>
 </body>
 </html>
-This code snippet adds a nav element containing three columns, each with a label and an output element. You can style the navigation bar (nav) and its columns (column) further using CSS to achieve the desired appearance and functionality.
-
-Feel free to modify the styles, adjust the layout, or add more columns according to your preferences. If you need additional functionalities or specific interactions, we can incorporate JavaScript to handle them as well.
-
-
-
 
 
 

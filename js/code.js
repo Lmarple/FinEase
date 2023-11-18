@@ -31,4 +31,8 @@ function addRow() {
     } else if (parseFloat(actualCost) < parseFloat(plannedCost)) {
       cell3.classList.add('green');
     }
+
+    document.getElementById('expense').value = '';
+      document.getElementById('plannedCost').value = '';
+      document.getElementById('actualCost').value = '';
   }
